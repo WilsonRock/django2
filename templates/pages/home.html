@@ -1,0 +1,45 @@
+{% extends 'layout/jumbotron_base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                {% load static %}
+                <div class="alert alert-warning alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h2>DISCLAIMER</h2>
+                    <p>
+                        
+                        La información y contenido en este documento es proveído solamente con propósitos educativos.
+                        
+                        Este documento no constituye oferta, solicitud o recomendación para comprar o vender acciones, cfds o cualquier otro instrumento financiero.
+                        Cualquier decisión de inversión hecha por el usuario debe basarse en su análisis propio e independiente teniendo en cuenta sus circunstancias financieras, objetivos de inversión y tolerancia al riesgo.
+                        
+                        El creador del documento no asume la responsabilidad por acciones tomadas por los lectores. Defcon Software y sus marcas no ofrecen asesoría de inversión, no realizan afirmaciones, promesas o garantías de cualquier sugerencia, sistema de negociación, estrategia, o información que resultara en una ganancia, perdida u otro resultado esperado. Los usuarios de este documento asumen todo el riesgo, incluyendo los riesgos de perdidas monetarias en las negociaciones que decidan efectuar.
+                        
+                        La negociación bursátil puede resultar en grandes pérdidas monetarias y no puede ser una actividad apropiada para cualquier persona
+                        . </p>
+                        ...</div>
+                
+                
+            </div>
+            
+          <hr>
+            <div class="padre">
+    
+                <div class="hijo"> <div class="section_wrapper mcb-section-inner"><div class="wrap mcb-wrap mcb-wrap-58a5f78b6 one  valign-top clearfix" style=""  ><div class="mcb-wrap-inner"><div class="column mcb-column mcb-item-67189a703 one column_column"><div class="column_attr clearfix align_center animate" data-anim-type="fadeIn" style=""><iframe src="https://docs.google.com/spreadsheets/d/1Cg1eTSSUYCc9oK2-5nx3BSdwL_u4laN3MhJe9YaWJUM/edit?usp=sharing" width="100%" height="1080" align="center">
+                </iframe>.</div>
+              </div>
+        </div>
+        
+    {% else %}
+        <div class="container">
+            <p>Esta sección es para los usuarios autenticados</p>
+        </div>
+    {% endif %}
+
+{% endblock %}
