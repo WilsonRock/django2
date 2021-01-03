@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', ')s3plx+hb5=@9z8em)fsl81q1vwu!fxwflhhz^dp2$
 #SECRET_KEY = ')s3plx+hb5=@9z8em)fsl81q1vwu!fxwflhhz^dp2$mienlxa-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 #ALLOWED_HOSTS = ['198.168.0.5:8081']
