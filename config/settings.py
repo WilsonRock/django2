@@ -30,7 +30,7 @@ DEBUG = False
 
 
 #ALLOWED_HOSTS = ['198.168.0.5:8081']
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['portafoliodjan.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
