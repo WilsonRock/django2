@@ -1,1 +1,1 @@
-web : gunicorn django2-esqueleto-master.wsgi --log file -
+web : gunicorn portafoliodjan.wsgi --log file -
